@@ -5,11 +5,11 @@
 ```
 docker network rm nacos_net
 docker network create nacos_net
-docker run --rm -d --name nacos_no_auth --network nacos_net --hostname nacos --env PREFER_HOST_MODE=hostname --env MODE=standalone -p8848:8848 nacos/nacos-server:latest
+docker run --rm -d --name nacos_no_auth --network nacos_net --hostname nacos --env PREFER_HOST_MODE=hostname --env MODE=standalone -p8848:8848 nacos/nacos-server:1.4.1
 ```
 admin url:
 
-http://127.0.0.1:8858/nacos
+http://127.0.0.1:8848/nacos
 
 nacos/nacos
 

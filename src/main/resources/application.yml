@@ -1,0 +1,13 @@
+server:
+  port: 18001
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.33.50:8858
+logging:
+  file:
+    name: app.log
